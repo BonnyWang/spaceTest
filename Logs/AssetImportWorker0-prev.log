@@ -200,3 +200,4 @@ Received Import Request.
 Start importing Assets/Material/blackSpace.mat using Guid(91fb80a193cfdc74193059728b69b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dc24221e6d415f8d32f4ac629468e00') in 0.017693 seconds 
   Import took 0.020215 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
