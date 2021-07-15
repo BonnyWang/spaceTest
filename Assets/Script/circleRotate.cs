@@ -24,6 +24,6 @@ public class circleRotate : MonoBehaviour
     void Update()
     {
         
-        transform.RotateAround(target.transform.position, Vector3.forward,  rotateSpeed* Time.deltaTime);
+        // transform.RotateAround(target.transform.position, Vector3.forward,  rotateSpeed* Time.deltaTime);
     }
 }
