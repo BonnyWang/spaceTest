@@ -4,20 +4,29 @@ using UnityEngine;
 
 public class circleRotate : MonoBehaviour
 {
+
+    // ***This script now only give an initial velocity
+
+
+
     public float initialVelocity;
     float scaleSize;
-    [SerializeField] private int rotateSpeed;
+
 
     private GameObject target;
     private void Start() {
-        target = GameObject.Find("Center");
+        // target = GameObject.Find("Center");
+        
         GetComponent<Rigidbody>().velocity = new Vector3(initialVelocity,initialVelocity,initialVelocity);
 
-        scaleSize = Random.Range(0.2f,1);
-        rotateSpeed = Random.Range(10,200);
-        transform.localScale = new Vector3(scaleSize,scaleSize,scaleSize);
 
-        GetComponent<Rigidbody>().velocity = new Vector3(2,2,2);
+        scaleSize = Random.Range(0.2f,1);
+        // rotateSpeed = Random.Range(10,200);
+        transform.localScale = new Vector3(scaleSize,scaleSize,scaleSize);
+        
+        // Set the mass relate to the scale of the object
+        GetComponent<Rigidbody>().mass = scaleSize;
+
     }
 
         // Update is called once per frame

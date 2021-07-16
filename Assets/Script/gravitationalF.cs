@@ -20,9 +20,10 @@ public class gravitationalF : MonoBehaviour
 
         if (Bodies == null){
 			Bodies = new List<gravitationalF>();
+            Bodies.Add(this);
+        }else{
+            Bodies.Add(this);
         }
-
-        Bodies.Add(this);
     }
 
     // Update is called once per frame

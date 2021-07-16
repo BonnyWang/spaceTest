@@ -17,12 +17,12 @@ public class InputManager : MonoBehaviour
                     var tempRender = raycastHit.transform.GetComponent<Renderer>();
                     tempRender.material.SetColor("_Color",Color.green);
 
+                }else{
+                    Debug.Log("Raycast hit");
+                    Vector3 newPlanetPosi =  raycastHit.point;
+                    newPlanetPosi.z = 0;
+                    Instantiate(planetPre,newPlanetPosi,Quaternion.identity);
                 }
-                
-                Debug.Log("Raycast hit");
-                Vector3 newPlanetPosi =  raycastHit.point;
-                newPlanetPosi.z = 0;
-                Instantiate(planetPre,newPlanetPosi,Quaternion.identity);
             }
             
         }
