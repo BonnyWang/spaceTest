@@ -826,6 +826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planetPre: {fileID: 8417232424728525752, guid: 657b2629b45673044aabc17ace711674, type: 3}
+  blackHolePre: {fileID: 4507671014160512372, guid: 09df468ad08a78949a1db8c4d3ab6fed, type: 3}
 --- !u!1 &1462461100
 GameObject:
   m_ObjectHideFlags: 0
