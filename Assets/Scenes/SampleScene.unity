@@ -632,7 +632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2152841795054182231, guid: 657b2629b45673044aabc17ace711674, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7884088449834959923, guid: 657b2629b45673044aabc17ace711674, type: 3}
       propertyPath: initialVelocity
