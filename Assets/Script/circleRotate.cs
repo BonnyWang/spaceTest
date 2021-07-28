@@ -20,7 +20,7 @@ public class circleRotate : MonoBehaviour
         GetComponent<Rigidbody>().velocity = new Vector3(initialVelocity,initialVelocity,initialVelocity);
 
 
-        scaleSize = Random.Range(0.2f,1);
+        scaleSize = Random.Range(0.1f,0.3f);
         // rotateSpeed = Random.Range(10,200);
         transform.localScale = new Vector3(scaleSize,scaleSize,scaleSize);
         
