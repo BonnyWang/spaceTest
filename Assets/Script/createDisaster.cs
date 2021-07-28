@@ -8,6 +8,8 @@ public class createDisaster : MonoBehaviour
     float posX;
     float posY;
     Vector3 instatiatePosi;
+
+    float currentTime;
     
     void Start()
     {
@@ -25,6 +27,10 @@ public class createDisaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if((Time.time - currentTime) > 2f){
+            currentTime = Time.time;
+            
+        }
         
     }
 }
