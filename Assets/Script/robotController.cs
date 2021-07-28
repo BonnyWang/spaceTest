@@ -17,10 +17,15 @@ public class robotController : MonoBehaviour
     }
 
     void move(){
-        float inputValue = Input.GetAxis("Horizontal");
-        if(Mathf.Abs(inputValue) >0){
+        float inputH = Input.GetAxis("Horizontal");
+        float inputV = Input.GetAxis("Vertical");
+        if(Mathf.Abs(inputH) >0){
            
-            transform.RotateAround(earth.transform.position, Vector3.back, inputValue);
+            transform.RotateAround(earth.transform.position, Vector3.back, inputH);
+            
+        }
+
+        if(Mathf.Abs(inputV) > 0){
             
         }
     }
