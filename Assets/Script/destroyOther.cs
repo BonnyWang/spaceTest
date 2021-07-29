@@ -16,7 +16,10 @@ public class destroyOther : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other) {
-        Destroy(other.gameObject);
+    private void OnTriggerEnter(Collider other) {
+        
+        if(other.gameObject.tag == "planet"){
+            Destroy(other.gameObject);
+        }
     }
 }

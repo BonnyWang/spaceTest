@@ -10,26 +10,35 @@ public class createDisaster : MonoBehaviour
     Vector3 instatiatePosi;
 
     float currentTime;
+
     
     void Start()
     {
-        for (int i = 0; i < 10; i++){
-            posX = Random.Range(2,10);
-            posY = Random.Range(0.5f,2);     
+        currentTime = Time.time;
 
-            instatiatePosi = new Vector3(posX,posY,0);
+        // for (int i = 0; i < 10; i++){
+        //     posX = Random.Range(2,10);
+        //     posY = Random.Range(0.5f,2);     
 
-            Instantiate(planetPre,instatiatePosi,Quaternion.identity);  
-        }
+        //     instatiatePosi = new Vector3(posX,posY,0);
+
+        //     Instantiate(planetPre,instatiatePosi,Quaternion.identity);  
+        // }
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if((Time.time - currentTime) > 2f){
+        if((Time.time - currentTime) > 1f){
             currentTime = Time.time;
             
+            posX = Random.Range(-5,5);
+            posY = Random.Range(-5,5);     
+
+            instatiatePosi = new Vector3(posX,posY,0);
+
+            Instantiate(planetPre,instatiatePosi,Quaternion.identity);
         }
         
     }
