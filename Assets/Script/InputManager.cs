@@ -16,11 +16,12 @@ public class InputManager : MonoBehaviour
 
                 if(mraycastHit.transform.gameObject.tag == "planet"){
                     Debug.Log("hit planet");
+                    // mraycastHit.transform.position = new Vector3(0,0,0);
                     var tempRender = mraycastHit.transform.GetComponent<Renderer>();
-                    tempRender.material.SetColor("_Color",Color.green);
-
+                    tempRender.material.color = Color.blue;
                 }else{
                     Debug.Log("Raycast hit");
+                    Debug.Log(mraycastHit.transform.gameObject.tag);
                     Vector3 newPlanetPosi =  mraycastHit.point;
                     newPlanetPosi.z = 0;
                     Instantiate(planetPre,newPlanetPosi,Quaternion.identity);

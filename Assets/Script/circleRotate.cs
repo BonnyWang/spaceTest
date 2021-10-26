@@ -10,18 +10,20 @@ public class circleRotate : MonoBehaviour
 
 
     public float initialVelocity;
+
+    int rotateSpeed;
     float scaleSize;
 
 
     private GameObject target;
     private void Start() {
-        // target = GameObject.Find("Center");
+        target = GameObject.Find("Center");
         
-        GetComponent<Rigidbody>().velocity = new Vector3(initialVelocity,initialVelocity,initialVelocity);
+        // GetComponent<Rigidbody>().velocity = new Vector3(initialVelocity,initialVelocity,initialVelocity);
 
 
         scaleSize = Random.Range(0.1f,0.3f);
-        // rotateSpeed = Random.Range(10,200);
+        rotateSpeed = Random.Range(10,200);
         transform.localScale = new Vector3(scaleSize,scaleSize,scaleSize);
         
         // Set the mass relate to the scale of the object
@@ -33,6 +35,6 @@ public class circleRotate : MonoBehaviour
     void Update()
     {
         
-        // transform.RotateAround(target.transform.position, Vector3.forward,  rotateSpeed* Time.deltaTime);
+        transform.RotateAround(target.transform.position, Vector3.forward,  rotateSpeed* Time.deltaTime);
     }
 }

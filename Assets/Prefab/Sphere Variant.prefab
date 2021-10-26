@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7884088449834959923, guid: 657b2629b45673044aabc17ace711674, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8417232424728525748, guid: 657b2629b45673044aabc17ace711674, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -75,5 +79,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sphere Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8847048784847964447, guid: 657b2629b45673044aabc17ace711674, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8847048784847964447, guid: 657b2629b45673044aabc17ace711674, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 657b2629b45673044aabc17ace711674, type: 3}
